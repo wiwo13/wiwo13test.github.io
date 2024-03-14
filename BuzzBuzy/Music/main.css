@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/uu.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+  backgroun
+
+}
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+
+}
+.logo{
+	width: 50px;
+	cursor: pointer;
+
+}
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+}
+
+/* Add a box shadow to the navigation links */
+.navbar ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjust the shadow as needed */
+}
+
+/* Optional: Hover effect for navigation links */
+.navbar ul li a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adjust the hover shadow as needed */
+}
+
+/* Rest of your existing CSS styles */
+/* ... */
+
+
+
+.rrow{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.ccol {
+    flex-basis: 50%;
+    padding: 20px; /* Add padding to create space around the content */
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-top: 10px; /* Add margin to separate the paragraph from the card */
+    font-weight: bold;
+}
+
+
+
+h1{
+	color:#fff;
+	font-size: 50px;
+}
+
+button{
+	width: 180px;
+	color: #000;
+	font-size:12px;
+	padding: 12px 0;
+	background: #fff;
+	border:0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+
+}
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(images/d.jfif);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5;
+
+}
+
+.card3 h5{
+  color: #fff;
+}
+
+.card4 h5{
+  color: #fff;
+}
+
+.card1{
+  background-image: url(images/n.jfif);
+}
+
+.card2{
+  background-image: url(images/v.jfif);
+}
+
+.card3{
+  background-image: url(images/rx.jfif);
+}
+.card4{
+  background-image: url(images/bnnd.jpg);
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+/* Define a keyframe animation named 'text-animation' */
+/* Define a keyframe animation for the gradient */
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(90deg, #9b59b6, #e91e63, #4CAF50); /* Start gradient colors */
+    -webkit-background-clip: text;
+    color: transparent; /* Start with text transparent */
+  }
+  100% {
+    background: linear-gradient(90deg, #9C27B0, #FFC107, #00BCD4); /* End gradient colors */
+    -webkit-background-clip: text;
+    color: transparent; /* End with text transparent */
+  }
+}
+
+
+/* Apply the gradient animation to the 'animate-gradient' class */
+.animate-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Make the text transparent */
+  animation: gradient-animation 3s linear infinite; /* Use the defined animation */
+}
+
+@keyframes gradient-animation1 {
+  0% {
+    background: linear-gradient(90deg, #9b59b6, #e91e63, #4CAF50); /* Start gradient colors */
+    -webkit-background-clip: text;
+    color: transparent; /* Start with text transparent */
+  }
+  33% {
+    background: linear-gradient(90deg, #FF5733, #FFC107, #33FF57); /* Middle gradient colors */
+    -webkit-background-clip: text;
+    color: transparent; /* Middle with text transparent */
+  }
+  66% {
+    background: linear-gradient(90deg, #3498db, #e74c3c, #8e44ad); /* Different gradient colors */
+    -webkit-background-clip: text;
+    color: transparent; /* Middle with text transparent */
+  }
+  100% {
+    background: linear-gradient(90deg, #9C27B0, #FFC107, #00BCD4); /* End gradient colors */
+    -webkit-background-clip: text;
+    color: transparent; /* End with text transparent */
+  }
+}
+
+/* Apply the gradient animation to the 'animate-gradient' class */
+.animate-gradient1 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Make the text transparent */
+  animation: gradient-animation 5s linear infinite; /* Use 5s for a smoother transition */
+}
+
+
+/* Style the dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Hide the dropdown content by default */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5E5553;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners */
+    width: 150px; /* Adjust the width as needed */
+}
+
+/* Style the dropdown links */
+.dropdown .dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Change link color on hover */
+.dropdown .dropdown-content a:hover {
+    background-color: #8D7F7D;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*footer p {
+  text-align: center;
+  padding: 30px 0px;
+  color: #fff;
+  font-weight: 300;
+}
+
+footer p a {
+  color: #fff;
+  transition: all .3s;
+}
+
+footer p a:hover {
+  color: #ec6090;
+}
+
+*/

@@ -1,0 +1,28 @@
+.vd{
+
+	display: flex;
+	justify-content: center;
+
+	text-align: left;
+	/*background: #333;*/
+	background: rgba(0, 0, 0, .2);
+	color: #fff;
+	margin-bottom: 10px;
+	min-height: 70vh;
+	overflow: hidden;
+	position: relative;
+
+	font-size: 1.5rem;
+	line-height: 2;
+	padding: 1rem 0;
+}
+.vd-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: fit-content;
+	z-index: -1;
+
+}

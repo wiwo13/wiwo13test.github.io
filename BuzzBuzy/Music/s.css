@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  
+}
+
+
+body {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/music.jpg'); /* Replace 'your-image-url.jpg' with your background image if needed */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+ font-family: 'Lobster', cursive;
+
+
+}
+
+
+
+
+
+.main-container {
+  margin-left: 245px;
+  margin-bottom: 100px;
+}
+
+
+
+.spotify-playlists {
+  padding: 20px 40px;
+}
+.spotify-playlists h2 {
+  color:#f0d7df;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.spotify-playlists h1 {
+  font-family: 'Lobster', cursive;
+  color: #dc6b69;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color:#54433d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover {
+  background-color: #d3a299;
+}
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 7px;
+  margin-bottom: 4px;
+}
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+
+.spotify-playlists .list .item h4 {
+  color: #000;
+  font-size: 17px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+.spotify-playlists .list .item p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+}
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+.preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}

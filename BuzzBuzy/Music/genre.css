@@ -1,0 +1,69 @@
+/* Brown Aesthetic with Pale Colors and Matched Header */
+body {
+  background-color: #f2e2d2; /* Pale beige background */
+  color: #654321; /* Dark brown text color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.header {
+   /* Matched brown background for the header */
+  padding: 20px;
+  text-align: center;
+  color: #fff; /* White text color */
+}
+
+.genre-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.genre-list li {
+  margin: 10px;
+  cursor: pointer;
+  border: 3px solid #CD5C5C; /* Darker brown border */
+  border-radius: 30px;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color:#846569; /* Pale red background */
+  color: #fff; /* White text color */
+  font-weight: bold;
+  
+  
+}
+
+.genre-list li:hover {
+  background-color: #424949; /* Light red background on hover */
+  color: #000; /* Dark brown text color */
+  transform: scale(0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.genre-explanation {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #4D5E72 /* Pale yellow background */
+  color: #A8A19F; /* Dark brown text color */
+  display: none;
+}
+
+.see-artists {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #603A2C; /* Darker brown background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff; /* White text color */
+  transition: background-color 0.3s;
+}
+
+.see-artists:hover {
+  background-color: #CD6155 ; /* Darker brown background on hover */
+}
+
+/* Change background color on body hover */
+body:hover {
+  background-color: #FCD0BA ; /* Lighter brown background on body hover */
+}

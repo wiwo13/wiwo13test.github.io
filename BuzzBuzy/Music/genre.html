@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/music.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="genre.css">
+<title>Music Genres</title>
+
+<style>
+  /* Dark aesthetic theme */
+ body {
+    background-color: #F1828D;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.jpg);
+    color: darkgrey;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    
+    padding: 8px;
+    text-align: center;
+  }
+  .genre-list {
+    list-style-type: none;
+    padding: 0;
+    color: #000;
+  }
+  .genre-list li {
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .genre-list li:hover {
+    background-color: #FCD0BA;
+  }
+  .genre-explanation {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    color: #EBD5D1;
+    margin: 30px;
+    
+    display: none;
+  }
+  .see-artists {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #FEFAD4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+</style>
+<script>
+  // Function to show genre explanation
+  function showExplanation(genre) {
+    // Hide all explanations
+    var explanations = document.getElementsByClassName("genre-explanation");
+    for (var i = 0; i < explanations.length; i++) {
+      explanations[i].style.display = "none";
+    }
+
+    // Show the selected genre's explanation
+    var explanation = document.getElementById(genre + "-explanation");
+    explanation.style.display = "block";
+  }
+</script>
+ <style >
+     p a {
+             color:#fff;/* Change font color to white */
+            font-weight: bold; /* Change font weight to bold */
+            margin-left: 20px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+      </style>
+</head>
+<body>
+<p ><a href="Main.html">&larr; Back</a></p>
+<div class="header">
+  
+  <h1>Music Genres</h1>
+</div>
+<ul class="genre-list">
+  <li onclick="showExplanation('indie')">Indie</li>
+ <div id="indie-explanation" class="genre-explanation">
+  "Indie" is short for "independent," and in the context of music and entertainment, it refers to works created and produced independently, without the involvement or financial support of major record labels, studios, or corporations. Indie music, films, video games, and other forms of media are typically created by individuals or small, often grassroots, organizations.<br>
+  <a class="see-artists" href="indie.html">See Artists</a>
+</div>
+
+ <li onclick="showExplanation('rock')">Rock</li>
+ <div id="rock-explanation" class="genre-explanation">
+  Rock music is a genre of popular music that originated as "rock and roll" in the United States in the late 1940s and early 1950s. It has since evolved into a diverse and influential genre known for its distinctive sound characterized by the use of electric guitars, bass guitars, drums, and powerful vocals.<br>
+  <a class="see-artists" href="rock.html">See Artists</a>
+</div>
+
+<li onclick="showExplanation('hiphop')">Hip hop music</li>
+<div id="hiphop-explanation" class="genre-explanation">
+ Hip-hop music is characterized by its rhythmic and lyrical style, often featuring spoken-word poetry, rap, and rhyming lyrics delivered over a beat. It typically incorporates elements of sampling, DJ scratching, and various musical styles, including funk, soul, jazz, and electronic music.<br>
+  <a class="see-artists" href="h.html">See Artists</a>
+</div>
+
+<li onclick="showExplanation('kpop')">K-pop</li>
+<div id="kpop-explanation" class="genre-explanation">
+ K-pop, short for Korean pop music, is a popular music genre and cultural phenomenon that originated in South Korea. It is characterized by a fusion of various musical styles, including pop, hip-hop, R&B, and electronic dance music, often accompanied by visually striking music videos and choreographed dance routines. <br>
+  <a class="see-artists" href="k.html">See Artists</a>
+</div>
+
+ <li onclick="showExplanation('country')">Country music</li>
+ <div id="country-explanation" class="genre-explanation">
+ Country music is a genre of music that features a variety of musical styles, including folk, blues, and gospel, often characterized by its emphasis on storytelling through lyrics and the use of instruments such as acoustic guitars, fiddles, steel guitars, and harmonicas. It often explores themes of love, heartbreak, rural life, and everyday experiences.<br>
+  <a class="see-artists" href="c.html">See Artists</a>
+</div>
+
+
+  
+<li onclick="showExplanation('r')">Alternative Rock</li>
+ <div id="r-explanation" class="genre-explanation">
+  Alternative rock, often abbreviated as alt-rock, is a diverse and influential music genre that emerged in the 1980s and gained mainstream popularity in the 1990s. It is characterized by its departure from the conventional sound of mainstream rock music and its willingness to experiment with various musical styles and themes. <br>
+  <a class="see-artists" href="Main.html">See Artists</a>
+</div>
+
+  <li onclick="showExplanation('pop')">Pop music</li>
+ <div id="pop-explanation" class="genre-explanation">
+  Pop music is a genre of popular music that originated as "pop"... 
+  <a class="see-artists" href="artist-page.html">See Artists</a>
+</div>
+  <li onclick="showExplanation('electronic')">Electronic music</li>
+  <li onclick="showExplanation('classical')">Classical music</li>
+  <li onclick="showExplanation('jazz')">Jazz</li>
+  <li onclick="showExplanation('hiphop')">Hip hop music</li>
+  <li onclick="showExplanation('country')">Country music</li>
+  <li onclick="showExplanation('punk')">Punk rock</li>
+  <li onclick="showExplanation('metal')">Heavy metal</li>
+  <li onclick="showExplanation('reggae')">Reggae</li>
+  <li onclick="showExplanation('newage')">New-age music</li>
+  <li onclick="showExplanation('latin')">Music of Latin America</li>
+  <li onclick="showExplanation('industrial')">Industrial music</li>
+  <li onclick="showExplanation('instrumental')">Instrumental</li>
+  <li onclick="showExplanation('jpop')">J-pop</li>
+  <li onclick="showExplanation('funk')">Funk</li>
+  <li onclick="showExplanation('kpop')">K-pop</li>
+  <li onclick="showExplanation('acousmatic')">Acousmatic music</li>
+  <li onclick="showExplanation('rnb')">R&B/Soul</li>
+</ul>
+
+<!-- Add more genre explanations here -->
+</body>
+</html>
+

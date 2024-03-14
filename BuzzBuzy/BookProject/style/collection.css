@@ -1,0 +1,158 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root{
+--green:#000000;	
+--dark-color:#5800FF;
+--black: #FFCAC8;
+--light-color:#FFFFD0;
+--border:.1rem solid rgba(0,0,0,0.1);
+--border-hover:0.1rem solid var(--black);
+--box-shadow:0 .1rem 0.1rem rgba(0,0,0,0.1);
+
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+    background-color: ;
+}
+body{
+	background:#F0F0F0;
+	background-size: cover;
+	
+}
+
+	
+}
+.container {
+	max-width: 1120px;
+	width: 100%;
+
+}
+.slide-container{
+	margin: 0 30px;
+	overflow: hidden;
+}
+.card{
+   
+   border: var(--border)
+	border-radius: 10%;
+
+
+}
+.card .image-box{
+	height: 170px;
+	width: 100px;
+	border-radius: 10%;
+	
+}
+
+.card .image-box img{
+	height: 100%;
+	width: 250%;
+	padding-left:65px;
+	padding-right: 70px;
+
+	padding-top:30px ;
+
+	border-radius: 10%;
+	
+}
+
+.card .profile-details {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	padding: 15px;
+	
+	text-align: center;
+	align-content: center;
+}
+.card .profile-details img{
+	height: 15px;
+	width: 10px;
+	padding-top: 5px;
+	cursor: pointer;
+	padding-left: 30px;
+
+	
+}
+
+.profile-details .name{
+	font-size: 12px;
+	font-weight: 600;
+	color: #213555;
+	text-align: center;
+}
+.profile-details p{
+	color: #000;
+	font-weight: 600px;
+}
+.swiper-navBtn{
+	color: #000;
+	height: 10px;
+	width: 100px;
+
+	
+
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+	font-size: 10px;
+}
+
+.swiper-pagination-bullet{
+	background-color: #000;
+}
+
+
+.click{
+
+	
+
+  margin-top: .5rem;
+	display: inline-block;
+	padding: .5rem 3rem;
+	border-radius: 2rem;
+	color: #fff;
+	background: #000;
+	font-size: 1.2rem;
+	cursor: pointer;
+	font-weight: 500;
+	text-align: center;
+  
+	
+
+}
+
+.click:hover{
+	background: #fff;
+	color: #000;
+}
+
+.botton{
+	margin-top: .5rem;
+	display: inline-block;
+	padding: .5rem 1rem;
+	border-radius: 2rem;
+	color: #fff;
+	background: #000;
+	font-size: 1.2rem;
+	cursor: pointer;
+	font-weight: 500;
+	text-align: center;
+
+
+}
+
+.botton:hover{
+	background: #fff;
+	color: #000;
+
+}
+
